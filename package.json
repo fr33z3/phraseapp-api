@@ -1,0 +1,22 @@
+{
+  "name": "phraseapp-api",
+  "version": "1.0.0",
+  "description": "Phrase.com API client",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "phrase",
+    "api",
+    "client"
+  ],
+  "author": "Sergei Gribovskii",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
