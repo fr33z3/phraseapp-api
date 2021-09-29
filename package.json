@@ -2,9 +2,9 @@
   "name": "phraseapp-api",
   "version": "1.0.0",
   "description": "Phrase.com API client",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --runInBand"
   },
   "keywords": [
     "phrase",
@@ -14,9 +14,17 @@
   "author": "Sergei Gribovskii",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.2.2",
+    "nock": "^13.1.3",
+    "tape": "^5.3.1",
+    "tape-nock": "^1.6.6",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "axios": "^0.21.4",
+    "remove": "^0.1.5"
   }
 }

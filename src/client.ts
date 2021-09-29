@@ -1,30 +1,22 @@
-import fetch from 'node-fetch'
+import axios from 'axios'
 
-let baseUrl = 'https://api.phrase.com/v2'
-let accessToken = ''
+export const client = axios.create({
+  baseURL: 'https://api.phrase.com/v2',
+  headers: {
+    'User-Agent': 'PhraseAPP Api Client',
+  }
+})
 
 type Options = {
   baseUrl?: string
-  accessToken?: string
+  accessToken?: string,
+  userAgent?: string,
 }
 
 export function configure(options: Options) {
-  if (options.accessToken) accessToken = options.accessToken
-  if (options.baseUrl) baseUrl = options.baseUrl
-}
-
-type Method = 'get' | 'post' | 'delete' | 'put' | 'patch'
-export async function request<Response>(path: string, method: Method, body: Record<string, any> = {}): Promise<Response> {
-  const url = baseUrl + path
-
-  const response = await fetch(url, {
-    method,
-    body: JSON.stringify(body),
-    headers: {
-      'X-PhraseApp-OTP': accessToken,
-    }
-  })
-  const data = await response.json() as Response
-
-  return data
+  if (options.accessToken) {
+    client.defaults.headers.common['Authorization'] = `token ${options.accessToken}`
+  }
+  if (options.userAgent) client.defaults.headers.common['User-Agent'] = options.userAgent
+  if (options.baseUrl) client.defaults.baseURL = options.baseUrl
 }
