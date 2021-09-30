@@ -1,3 +1,4 @@
 export {configure} from './client'
-export {listProjects, getProject, createProject, updateProject, deleteProject} from './api/projects'
-export {listAccountLocales, listLocales, getLocale, createLocale, updateLocale, deleteLocale} from './api/locales'
+export * from './api/projects'
+export * from './api/locales'
+export * from './api/keys'
