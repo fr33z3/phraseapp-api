@@ -1,5 +1,5 @@
 import {client} from 'client'
-import {AccountLocale, Locale, LocaleStatistics} from 'types/locale'
+import {AccountLocale, Locale, LocaleParams, LocaleStatistics} from 'types/locale'
 
 export async function listAccountLocales(accountId: string) {
   const {data} = await client.get<AccountLocale>(`/accounts/${accountId}/locales`)
@@ -16,22 +16,7 @@ export async function getLocale(projectId: string, localeId: string) {
   return data
 }
 
-type LocaleParams = {
-  branch?: string
-  name: string
-  code: string
-  default?: boolean
-  main?: boolean
-  rtl?: boolean
-  source_locale_id?: string
-  unverify_new_translations?: boolean
-  unverify_updated_translations?: boolean
-  autotranslate?: boolean
-}
-
-type MutateLocaleResponse = Locale & {
-  statistics: LocaleStatistics
-}
+type MutateLocaleResponse = Locale & {statistics: LocaleStatistics}
 export async function createLocale(projectId: string, params: LocaleParams) {
   const {data} = await client.post<MutateLocaleResponse>(`/projects/${projectId}/locales`, params)
   return data
@@ -43,6 +28,6 @@ export async function updateLocale(projectId: string, localeId: string, params: 
 }
 
 export async function deleteLocale(projectId: string, localeId: string) {
-  const {data} = await client.delete(`/projects/${projectId}/locales/${localeId}`)
+  await client.delete(`/projects/${projectId}/locales/${localeId}`)
   return true
 }

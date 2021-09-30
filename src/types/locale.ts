@@ -36,3 +36,16 @@ export type LocaleStatistics = {
   unverified_words_count: number
   words_total_count: number
 }
+
+export type LocaleParams = {
+  branch?: string
+  name: string
+  code: string
+  default?: boolean
+  main?: boolean
+  rtl?: boolean
+  source_locale_id?: string
+  unverify_new_translations?: boolean
+  unverify_updated_translations?: boolean
+  autotranslate?: boolean
+}
