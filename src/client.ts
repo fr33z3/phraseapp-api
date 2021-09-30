@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios, {AxiosResponse} from 'axios'
 
 export const client = axios.create({
   baseURL: 'https://api.phrase.com/v2',
@@ -6,6 +6,18 @@ export const client = axios.create({
     'User-Agent': 'PhraseAPP Api Client',
   }
 })
+
+client.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    const {response} = error
+    if (response.status === 400 || response.status === 422) {
+      return Promise.reject(response.data)
+    } else {
+      return Promise.reject(response.errors)
+    }
+  }
+)
 
 type Options = {
   baseUrl?: string

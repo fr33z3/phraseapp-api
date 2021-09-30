@@ -1,0 +1,229 @@
+[
+    {
+        "scope": "https://api.phrase.com:443",
+        "method": "GET",
+        "path": "/v2/projects/77617b5199af590fde8642fb4178eaa1/locales",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": "2ef1309cdd0b10a35b3978340ed2a8b7",
+                "name": "ar-MA",
+                "code": "ar-MA",
+                "default": false,
+                "main": false,
+                "rtl": true,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "two",
+                    "few",
+                    "many",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:44Z",
+                "updated_at": "2021-09-27T15:28:44Z",
+                "source_locale": null
+            },
+            {
+                "id": "4fafad4eb6557baf38d185cbd8511a39",
+                "name": "de-DE",
+                "code": "de-DE",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:43Z",
+                "updated_at": "2021-09-27T15:28:43Z",
+                "source_locale": null
+            },
+            {
+                "id": "0cd76a74f8850878c9e1ac09fa22925e",
+                "name": "en-US",
+                "code": "en-US",
+                "default": true,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:43Z",
+                "updated_at": "2021-09-27T15:28:43Z",
+                "source_locale": null
+            },
+            {
+                "id": "31d377e764d7d87928e45ade9a2f946a",
+                "name": "English",
+                "code": "en",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "other"
+                ],
+                "created_at": "2021-09-30T08:01:55Z",
+                "updated_at": "2021-09-30T08:01:55Z",
+                "source_locale": null
+            },
+            {
+                "id": "dc48ed5185edc91dda0e7189e9b84614",
+                "name": "fr-FR",
+                "code": "fr-FR",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:44Z",
+                "updated_at": "2021-09-27T15:28:44Z",
+                "source_locale": null
+            },
+            {
+                "id": "6800a1d9184db966c2a90edce0a225e9",
+                "name": "kpe-GN",
+                "code": "kpe-GN",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "two",
+                    "few",
+                    "many",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:44Z",
+                "updated_at": "2021-09-27T15:28:44Z",
+                "source_locale": null
+            },
+            {
+                "id": "841099c7c4597555044959f464888d88",
+                "name": "Russian",
+                "code": "ru",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "few",
+                    "many",
+                    "other"
+                ],
+                "created_at": "2021-09-30T08:03:59Z",
+                "updated_at": "2021-09-30T08:03:59Z",
+                "source_locale": null
+            },
+            {
+                "id": "9dcea644b6c57c09c69d1f54a3b571f0",
+                "name": "th-TH",
+                "code": "th-TH",
+                "default": false,
+                "main": false,
+                "rtl": false,
+                "plural_forms": [
+                    "zero",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:44Z",
+                "updated_at": "2021-09-27T15:28:44Z",
+                "source_locale": null
+            },
+            {
+                "id": "f01a2a99707324af611d5edefccdff14",
+                "name": "ur-PK",
+                "code": "ur-PK",
+                "default": false,
+                "main": false,
+                "rtl": true,
+                "plural_forms": [
+                    "zero",
+                    "one",
+                    "other"
+                ],
+                "created_at": "2021-09-27T15:28:44Z",
+                "updated_at": "2021-09-27T15:28:44Z",
+                "source_locale": null
+            }
+        ],
+        "rawHeaders": [
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Date",
+            "Thu, 30 Sep 2021 08:09:47 GMT",
+            "Server",
+            "nginx/1.15.9",
+            "Vary",
+            "Accept-Encoding",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Download-Options",
+            "noopen",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "strict-origin-when-cross-origin",
+            "Link",
+            "<https://api.phrase.com/v2/projects/77617b5199af590fde8642fb4178eaa1/locales?page=1>; rel=first, <https://api.phrase.com/v2/projects/77617b5199af590fde8642fb4178eaa1/locales?page=1>; rel=last",
+            "Pagination",
+            "{\"total_count\":9,\"current_page\":1,\"current_per_page\":25,\"previous_page\":null,\"next_page\":null}",
+            "X-Rate-Limit-Limit",
+            "1000",
+            "X-Rate-Limit-Remaining",
+            "999",
+            "X-Rate-Limit-Reset",
+            "1632989400",
+            "ETag",
+            "W/\"2137f65328413a28c652033caa42574a\"",
+            "Cache-Control",
+            "max-age=0, private, must-revalidate",
+            "Set-Cookie",
+            "language=en; path=/; expires=Mon, 30 Sep 2041 08:09:47 GMT",
+            "Set-Cookie",
+            "_phrase_session_sec=bVY1eVRWQndEVlNFZ2N1dnZpZ3lqVytUTmFCejQ4OG9Lb2R4OVRvUHJxcWNXVE5wOUtNM1NQUlJ0b3N0SHlrYUl1cFAyNHVEUHRQRU9sQUhzT3FUS2c9PS0tSnRQbkhmclljUlZWM2JTMjlPR09hZz09--0c862f54284001fff6ec84dbde6c469e1c59bb61; path=/; secure; HttpOnly",
+            "X-Trace-ID",
+            "9aebe802ae441bc3",
+            "X-Trace-Sampled",
+            "false",
+            "Vary",
+            "Origin",
+            "X-Generated",
+            "2021-09-30T08:09:47+00:00",
+            "X-Server",
+            "app-phrase-com-947876655-btlxk",
+            "Strict-Transport-Security",
+            "max-age=15724800; includeSubDomains",
+            "X-Edge-Origin-Shield-Skipped",
+            "0",
+            "X-Cache",
+            "Miss from cloudfront",
+            "Via",
+            "1.1 20997ca80e84f6ddda445ba948f015bd.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop",
+            "HAM50-C3",
+            "X-Amz-Cf-Id",
+            "jkmxrmIbVvh2rnYTQwu_5Ylg8_VFT1Vz024B_5WtnbfXExblMzv6mw=="
+        ],
+        "responseIsBinary": false
+    }
+]

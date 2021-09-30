@@ -1,4 +1,5 @@
 import {Project} from './project'
+import {Maybe} from './common'
 
 export type AccountLocale = {
   id: string
@@ -21,7 +22,17 @@ export type Locale = {
   main: boolean
   rtl: boolean
   plural_forms: string[]
-  source_locale: SourceLocale
+  source_locale: Maybe<SourceLocale>
   created_at: Date
   updated_at: Date
+}
+
+export type LocaleStatistics = {
+  keys_total_count: number
+  keys_untranslated_count: number
+  missing_words_count: number
+  translations_completed_count: number
+  translations_unverified_count: number
+  unverified_words_count: number
+  words_total_count: number
 }
